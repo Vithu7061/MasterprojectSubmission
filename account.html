@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sociebite - Account Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="account.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Sociebite</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Back to Marketplace</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="account-page">
+        <div class="account-container">
+            <div class="account-tabs">
+                <button class="tab-button active" data-tab="personal">Personal Data</button>
+                <button class="tab-button" data-tab="purchased">Purchased Products</button>
+                <button class="tab-button" data-tab="listed" id="listedbtn">Listed Products</button>
+            </div>
+
+            <div class="account-content">
+                <div class="account-header">
+                    <h1>Account Details</h1>
+                    <p class="user-email"></p>
+                </div>
+
+                <div class="tab-content" id="personal">
+                    <div class="data-section">
+                        <h2>Personal Information</h2>
+                        <!-- Company Image Upload für Business User -->
+                        <div id="companyImageSection" class="company-image-section" style="display: none;">
+                            <div class="info-group">
+                                <label>Company Logo:</label>
+                                <div class="image-upload-container">
+                                    <img id="companyLogo" src="Images/default-company.png" alt="Company Logo">
+                                    <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+                                    <button class="upload-button" onclick="document.getElementById('imageUpload').click()">
+                                        Change Logo
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-group">
+                            <label>Name:</label>
+                            <input type="text" id="editUserName" class="edit-input" value="John Doe">
+                        </div>
+                        <div class="info-group">
+                            <label>Email:</label>
+                            <span id="userEmail">john@example.com</span>
+                        </div>
+                        <div class="info-group">
+                            <label>Account Type:</label>
+                            <span id="accountType">Private Account</span>
+                        </div>
+                    </div>
+                    <div style="max-width: 600px; margin: 0 auto;">
+                        <button class="edit-button">Edit Information</button>
+                        <button class="save-button" id="savebtn">Save Changes</button>
+                    </div>
+                </div>
+
+                <div class="tab-content hidden" id="purchased">
+                    <div class="products-grid">
+                        <h2>Purchase History</h2>
+                        <div class="no-items-message">No purchased products yet</div>
+                        <!-- Purchased products will be dynamically inserted here -->
+                    </div>
+                </div>
+
+                <div class="tab-content hidden" id="listed">
+                    <div class="products-grid">
+                        <h2>Your Listed Products</h2>
+                        <div class="no-items-message">No listed products yet</div>
+                        <!-- Listed products will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="account.js"></script>
+</body>
+</html> 

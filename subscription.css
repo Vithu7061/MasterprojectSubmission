@@ -1,0 +1,111 @@
+.subscription-page {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.subscription-page h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.subscription-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.subscription-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.subscription-card:hover {
+    transform: translateY(-5px);
+}
+
+.subscription-card.premium {
+    border: 2px solid #37B24D;
+}
+
+.premium-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #37B24D;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.subscription-card h2 {
+    color: #37B24D;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 1rem 0;
+}
+
+.price span {
+    font-size: 1rem;
+    color: #666;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.features li {
+    padding: 0.4rem 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.subscription-buttonbase {
+    background: #37B24D;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.subscription-buttonbase:hover {
+    background: #2f9641;
+} 
+
+
+.subscription-buttonpremium {
+    background: #37B24D;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.subscription-buttonpremium:hover {
+    background: #2f9641;
+} 

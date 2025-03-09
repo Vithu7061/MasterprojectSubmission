@@ -1,0 +1,120 @@
+.confirmation-page {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.confirmation-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 2rem;
+}
+
+.order-summary h1 {
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+
+.product-info {
+    display: flex;
+    gap: 2rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.quantityclass{
+    margin-top: 15px;
+}
+
+.product-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+
+.product-details{
+max-width: 100%;
+}
+
+.product-details h2 {
+    color: #37B24D;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.price2 {
+    color: #37B24D;
+}
+.company {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+
+
+.pickup-info {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.pickup-info h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.pickup-info p {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.payment-section {
+    margin: 2rem 0;
+}
+
+.payment-section h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.payment-option input[type="radio"] {
+    margin: 0;
+}
+
+.confirm-button {
+    background: #37B24D;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 2rem;
+    transition: background-color 0.3s;
+}
+
+.confirm-button:hover {
+    background: #2f9641;
+} 

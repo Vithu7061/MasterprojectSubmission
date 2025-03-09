@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sociebite - Register</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Sociebite</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Back to Marketplace</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="auth-page">
+        <div class="auth-container">
+            <div class="auth-header">
+                <h2>Register</h2>
+            </div>
+            
+            <div class="auth-content">
+                <form id="registerForm">
+                    <div class="account-type-selector">
+                        <label class="radio-container">
+                            <input type="radio" name="accountType" value="private" checked>
+                            <span class="radio-label">Private Account</span>
+                        </label>
+                        <label class="radio-container">
+                            <input type="radio" name="accountType" value="company">
+                            <span class="radio-label">Company Account</span>
+                        </label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="registerName">Name</label>
+                        <input type="text" id="registerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerEmail">Email</label>
+                        <input type="email" id="registerEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Password</label>
+                        <input type="password" id="registerPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPasswordConfirm">Confirm Password</label>
+                        <input type="password" id="registerPasswordConfirm" required>
+                    </div>
+                    <div id="companyFields" class="company-fields hidden">
+                        <div class="form-group">
+                            <label for="companyName">Company Name</label>
+                            <input type="text" id="companyName">
+                        </div>
+                        
+                        <div class="address-group">
+                            <div class="form-group">
+                                <label for="street">Street & Number</label>
+                                <input type="text" id="street" placeholder="e.g., Hauptstraße 1">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="postalCode">Postal Code</label>
+                                    <input type="text" id="postalCode" placeholder="e.g., 10115" pattern="[0-9]{5}">
+                                </div>
+                                <div class="form-group">
+                                    <label for="city">City</label>
+                                    <input type="text" id="city" placeholder="e.g., Berlin">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bank-group">
+                            <div class="form-group">
+                                <label for="iban">IBAN</label>
+                                <input type="text" id="iban" placeholder="DE89 3704 0044 0532 0130 00">
+                            </div>
+                            <div class="form-group">
+                                <label for="bic">BIC</label>
+                                <input type="text" id="bic" placeholder="DEUTDEBBXXX">
+                            </div>
+                            <div class="form-group">
+                                <label for="accountHolder">Account Holder</label>
+                                <input type="text" id="accountHolder" placeholder="Company Name GmbH">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="auth-button">Register</button>
+                </form>
+                <div class="auth-footer">
+                    <p>Already have an account? <a href="login.html">Login here</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="auth.js"></script>
+</body>
+</html> 

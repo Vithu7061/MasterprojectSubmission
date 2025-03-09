@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sociebite - Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Sociebite</a>
+            </div>
+            <div class="nav-links">
+                <a href="account.html" id="userEmail" class="user-email"></a>
+                <a href="login.html" id="loginLink">Log in</a>
+                <a href="#" id="listProductLink">List Products</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <div class="search-inputs">
+                <input type="text" placeholder="Product, Keyword or Company" class="search-input">
+                <!--<div class="postal-input-container">-->
+                    <input type="text" placeholder="City, Postal Code" class="search-input">
+                <!--</div>-->
+                <select class="search-input2">
+                    <option value="0">Distance</option>
+                    <option value="5">5 km</option>
+                    <option value="10">10 km</option>
+                    <option value="20">20 km</option>
+                    <option value="50">50 km</option>
+                </select>
+                <button class="search-button">SEARCH</button>
+            </div>
+        </div>
+        
+        <div class="content-container">
+            <div class="products-list">
+                <div class="products-container">
+                    <!-- Product cards will be dynamically inserted here -->
+                    <div class="product-card">
+                        <img src="path/to/image.jpg" alt="Product Image">
+                        <h2 class="product-name">Product Name</h2>
+                        <p class="company">Company Name</p>
+                        
+                        <div class="product-details">
+                            <p class="description">Product description goes here...</p>
+                            <p class="price">€19.99</p>
+                            <hr>
+                            <div class="location-info">
+                                <p>Location: City</p>
+                                <p>Available: Date</p>
+                            </div>
+                        </div>
+
+                        <button class="order-now-button">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-details empty">
+                <p>Select a product to see details</p>
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const loginLink = document.getElementById('loginLink');
+            const userEmail = document.getElementById('userEmail');
+            const listProductLink = document.getElementById('listProductLink');
+            const loggedInUser = localStorage.getItem('loggedInUser');
+            
+            if (loggedInUser) {
+                userEmail.textContent = loggedInUser;
+                userEmail.style.display = 'inline';
+                loginLink.textContent = 'Log off';
+                loginLink.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    localStorage.removeItem('loggedInUser');
+                    window.location.reload();
+                });
+            }
+            
+            // List Products Link Handler
+            listProductLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                const data = JSON.parse(localStorage.getItem('userData'));
+                console.log(data.account_type);
+                if (loggedInUser) {
+                    if(data.account_type==='company'){
+                        window.location.href = 'list-product.html';
+                    }else{
+                        alert('Please use a company account to list products!');
+                    }
+                } else {
+                    alert('Please log in to list products!');
+                }
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html> 

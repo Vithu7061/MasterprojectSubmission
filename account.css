@@ -1,0 +1,243 @@
+.account-page {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: calc(100vh - 130px);
+}
+
+.account-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 2rem;
+    display: flex;
+    overflow-y: auto;
+    gap: 2rem;
+    height: calc(100vh - 180px);
+}
+
+.account-header {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.account-header h1 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.user-email {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.account-tabs {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 250px;
+    border-right: 1px solid #eee;
+    padding-right: 2rem;
+    margin-bottom: 0;
+}
+
+.tab-button {
+    padding: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #666;
+    font-size: 1rem;
+    position: relative;
+    text-align: left;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.tab-button:hover {
+    background: #f8f9fa;
+}
+
+.tab-button.active {
+    color: #37B24D;
+    background: #e8f5e9;
+}
+
+.tab-button.active::after {
+    display: none;
+}
+
+.account-content {
+    flex: 1;
+    margin-left: 270px;
+}
+
+.tab-content {
+    padding: 1rem 0;
+}
+
+.tab-content.hidden {
+    display: none;
+}
+
+.data-section {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.info-group {
+    display: flex;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+
+.info-group label {
+    width: 120px;
+    color: #666;
+    font-weight: bold;
+    font-size: 18px; /* Größere Schrift */
+
+}
+
+.info-group span {
+    color: #333;
+}
+
+.edit-input{
+    font-size: 18px; /* Größere Schrift */
+    border: none; /* Kein Rand */
+    outline: none;
+}
+
+.save-button {
+    background: #37B24D;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.save-button:hover {
+    background: #2f9641;
+}
+
+.edit-button {
+    background: #37B24D;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.edit-button:hover {
+    background: #2f9641;
+}
+
+.products-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.no-items-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #666;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+
+.company-image-section {
+    margin-bottom: 2rem;
+}
+
+.image-upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#companyLogo {
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #eee;
+}
+
+.upload-button {
+    background: #37B24D;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.upload-button:hover {
+    background: #2f9641;
+}
+
+.product-item {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.product-item h3 {
+    color: #37B24D;
+    margin-bottom: 0.5rem;
+}
+
+.product-item .price {
+    font-weight: bold;
+    color: #37B24D;
+    margin-bottom: 0.5rem;
+}
+
+.product-item .location,
+.product-item .availability,
+.product-item .quantity {
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.product-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.product-actions button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.edit-product {
+    background: #37B24D;
+    color: white;
+}
+
+.delete-product {
+    background: #dc3545;
+    color: white;
+} 

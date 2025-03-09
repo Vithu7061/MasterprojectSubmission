@@ -1,0 +1,175 @@
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 130px);
+    padding: 2rem;
+    position: relative;
+    z-index: 1002;
+}
+
+.auth-container {
+    background-color: white;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1003;
+}
+
+.auth-header {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+}
+
+.auth-tabs {
+    display: flex;
+    gap: 1rem;
+}
+
+.auth-tab {
+    background: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: #666;
+    font-size: 1rem;
+}
+
+.auth-tab.active {
+    color: #37B24D;
+    border-bottom: 2px solid #37B24D;
+}
+
+.auth-content {
+    padding: 2rem;
+}
+
+.auth-content.hidden {
+    display: none;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #37B24D;
+}
+
+.auth-button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #37B24D;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.auth-button:hover {
+    background-color: #2f9641;
+}
+
+header {
+    z-index: 1001;
+}
+
+.account-type-selector {
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.radio-container {
+    display: block;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.radio-container input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.radio-label {
+    color: #444;
+}
+
+.company-fields {
+    border: 1px solid #eee;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    background: #f8f9fa;
+}
+
+.company-fields.hidden {
+    display: none;
+}
+
+.address-group, .bank-group {
+    margin: 1.5rem 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid #ddd;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+#iban {
+    text-transform: uppercase;
+}
+
+#postalCode {
+    width: 100px;
+}
+
+.auth-header h2 {
+    color: #37B24D;
+    text-align: center;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.auth-footer a {
+    color: #37B24D;
+    text-decoration: none;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+} 

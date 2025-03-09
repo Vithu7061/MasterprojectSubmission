@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sociebite - Order Confirmation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="order-confirmation.css">
+</head>
+<body class="confirmation-page">
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Sociebite</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Back to Marketplace</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="confirmation-page">
+        <div class="confirmation-container">
+            <div class="order-summary">
+                <h1>Order Summary</h1>
+                    <img id="companybanner" src="Images/musterlogo2.png" alt="Product Image" class="product-image">
+                    <div class="product-details">
+                        <h2 class="productname" id="productName">Product Name</h2>
+                        <p class="company" id="companyName">Company Name</p>
+                        <h3 class="price2" id="productPrice">€0.00</h3>
+                    </div>
+
+                <div class="pickup-info">
+                    <h3>Pickup Information</h3>
+                    <p id="pickupLocation">Location: </p>
+                    <p id="pickupTime">Available for pickup: </p>
+                </div>
+                <p class="description" id="productDescription">Product description goes here...</p>
+                <div class="quantityclass">
+                    <label for="quantity">Quantity:</label>
+                    <select id="quantity" name="quantity">
+                        <!-- Optionen dynamisch generieren -->
+                    </select>
+                </div>
+
+                <button class="confirm-button">Confirm Order</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="order-confirmation.js"></script>
+</body>
+</html> 

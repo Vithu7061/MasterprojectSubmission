@@ -1,0 +1,74 @@
+[
+  {
+    "postalCode": "41539",
+    "name": "Dormagen",
+    "municipality": {
+      "key": "05162004",
+      "name": "Dormagen, Stadt",
+      "type": "Stadt"
+    },
+    "district": {
+      "key": "05162",
+      "name": "Rhein-Kreis Neuss",
+      "type": "Kreis"
+    },
+    "federalState": {
+      "key": "05",
+      "name": "Nordrhein-Westfalen"
+    }
+  },
+  {
+    "postalCode": "41540",
+    "name": "Dormagen",
+    "municipality": {
+      "key": "05162004",
+      "name": "Dormagen, Stadt",
+      "type": "Stadt"
+    },
+    "district": {
+      "key": "05162",
+      "name": "Rhein-Kreis Neuss",
+      "type": "Kreis"
+    },
+    "federalState": {
+      "key": "05",
+      "name": "Nordrhein-Westfalen"
+    }
+  },
+  {
+    "postalCode": "41541",
+    "name": "Dormagen",
+    "municipality": {
+      "key": "05162004",
+      "name": "Dormagen, Stadt",
+      "type": "Stadt"
+    },
+    "district": {
+      "key": "05162",
+      "name": "Rhein-Kreis Neuss",
+      "type": "Kreis"
+    },
+    "federalState": {
+      "key": "05",
+      "name": "Nordrhein-Westfalen"
+    }
+  },
+  {
+    "postalCode": "41542",
+    "name": "Dormagen",
+    "municipality": {
+      "key": "05162004",
+      "name": "Dormagen, Stadt",
+      "type": "Stadt"
+    },
+    "district": {
+      "key": "05162",
+      "name": "Rhein-Kreis Neuss",
+      "type": "Kreis"
+    },
+    "federalState": {
+      "key": "05",
+      "name": "Nordrhein-Westfalen"
+    }
+  }
+]
