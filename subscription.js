@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             try {
                 
-                const stripeResponse = await fetch('http://localhost:3000/api/stripe/create-custompayment-link', {
+                const stripeResponse = await fetch('http://localhost:3000/api/stripe/create-payment-link', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

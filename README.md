@@ -22,7 +22,11 @@
 
 ## Running the Application  
 1. Open a terminal and navigate to the project root directory.  
-2. Start the application:  
+2. Before the first launch ensure all packages are installed:
+   ```sh
+   npm install
+   ```
+3. Start the application:  
    ```sh
    npm run dev
    ```
